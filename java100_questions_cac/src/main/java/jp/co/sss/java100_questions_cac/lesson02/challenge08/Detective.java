@@ -79,7 +79,7 @@ public class Detective {
 			System.out.println("\n探偵：\nやっぱりその経路が一番可能性が高いね。");
 			break;
 		case 2:
-			System.out.println("探偵：\n犬がよく知っている人物ならあり得るね。");
+			System.out.println("探偵：\nその可能性は低いかな。");
 			break;
 		case 3:
 			System.out.println(" 探偵：\n 犬がよく知っている人物ならあり得るね。");
