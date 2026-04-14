@@ -22,5 +22,23 @@
 package jp.co.sss.java100_questions_cac.lesson01.challenge03;
 
 public class Patisserie {
+	public static void main(String[] args) {
+
+		System.out.println("たいへんお待たせしました。");
+		System.out.println("【ポエール・ネルメ】");
+		System.out.println("ただいまより開店です！！");
+
+		int citron = 30;
+		int choocola = 30;
+		int pistage = 30;
+
+		System.out.println("\n");
+		System.out.println("本日のおすすめ商品です。");
+		System.out.println("\n");
+		System.out.println("シトロン\t \\250・・・残り" + citron + "個");
+		System.out.println("ショコラ\t \\280・・・残り" + choocola + "個");
+		System.out.println("シトロン\t \\320・・・残り" + pistage + "個");
+
+	}
 
 }
