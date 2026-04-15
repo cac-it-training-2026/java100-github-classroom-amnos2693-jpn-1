@@ -86,6 +86,11 @@ public class Detective {
 		String numStr = br.readLine();
 		int num = Integer.parseInt(numStr);
 
+		if (num == 1) {
+			System.out.println("\n探偵：\n正解です。");
+		} else if (num == 2) {
+			System.out.println("\n探偵：\n不正解です。");
+		}
 		//ここに記述する
 
 	}
