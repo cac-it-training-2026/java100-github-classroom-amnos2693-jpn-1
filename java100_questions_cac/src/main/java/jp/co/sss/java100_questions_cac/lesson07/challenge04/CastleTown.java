@@ -23,41 +23,46 @@
 
 package jp.co.sss.java100_questions_cac.lesson07.challenge04;
 
-
 class Samurai {
 
-    void fight() {
-        System.out.println("戦うよ～。");
-    }
+	void fight() {
+		System.out.println("戦うよ～。");
+	}
 
+	void work() {
+		System.out.println("何かして働くよ～。");
+	}
+	//ここにwork()メソッドを記述
+}
 
-    //ここにwork()メソッドを記述
-
+class Retainer extends Samurai {
+	@Override
+	void work() {
+		System.out.println("年貢を取り立てるよ～。");
+	}
 
 }
 
-
 //ここに問題1で作成したRetainerを改変して記述
-
 
 public class CastleTown {
 
-    public static void main(String[] args) {
-        System.out.println("侍は働きます。\n");
+	public static void main(String[] args) {
+		System.out.println("侍は働きます。\n");
 
-        System.out.println("侍1：");
+		System.out.println("侍1：");
 
+		Samurai samurai = new Samurai();
+		samurai.work();
+		//ここに必要な処理を記述
 
-        //ここに必要な処理を記述
+		System.out.println("\n具体的に言うと藩士は年貢を取り立てます。\n");
 
+		System.out.println("藩士1：");
 
-        System.out.println("\n具体的に言うと藩士は年貢を取り立てます。\n");
+		Retainer retainer = new Retainer();
+		retainer.work();
+		//ここに必要な処理を記述
 
-        System.out.println("藩士1：");
-
-
-        //ここに必要な処理を記述
-
-
-    }
+	}
 }

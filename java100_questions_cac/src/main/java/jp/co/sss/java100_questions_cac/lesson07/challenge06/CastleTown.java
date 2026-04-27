@@ -25,31 +25,33 @@ package jp.co.sss.java100_questions_cac.lesson07.challenge06;
 
 class Samurai {
 
-    void fight() {
-        System.out.println("戦うよ～。");
-    }
+	void fight() {
+		System.out.println("戦うよ～。");
+	}
 
-    void work() {
-        System.out.println("何かして働くよ～");
-    }
+	void work() {
+		System.out.println("何かして働くよ～");
+	}
 
 }
 
+final class UltimateSwordsman {
+}
+
+class EasySwordsman extends UltimateSwordsman {
+}
 
 //ここにUltimateSwordsmanクラスを記述
 
-
 //ここにEasySwordsmanクラスを記述
-
 
 public class CastleTown {
 
-    public static void main(String[] args) {
-        System.out.println("究極の剣豪クラスを継承してみます。\n");
+	public static void main(String[] args) {
+		System.out.println("究極の剣豪クラスを継承してみます。\n");
 
+		EasySwordsman easySwordsman = new EasySwordsman();
+		//ここにEasySwordsmanクラスのオブジェクト生成処理を記述
 
-       //ここにEasySwordsmanクラスのオブジェクト生成処理を記述
-
-
-    }
+	}
 }
