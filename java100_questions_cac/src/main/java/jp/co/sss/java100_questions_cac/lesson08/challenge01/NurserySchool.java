@@ -12,6 +12,8 @@
 
 package jp.co.sss.java100_questions_cac.lesson08.challenge01;
 
+import jp.co.sss.java100_questions_cac.lesson08.challenge02.Nursery.NurserySchoolChild;
+
 class Nurse {
     private String name;
 

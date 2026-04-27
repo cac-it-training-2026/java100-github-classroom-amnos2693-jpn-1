@@ -27,41 +27,79 @@ package jp.co.sss.java100_questions_cac.lesson07.challenge07;
 
 class Samurai {
 
+	protected String name;
 
-    //ここにフィールドnameを記述
+	/**
+	 * @param name
+	 */
+	public Samurai(String name) {
+		this.name = name;
+	}
 
+	//ここにフィールドnameを記述
 
-    void fight() {
-        System.out.println("戦うよ～。");
-    }
+	void fight() {
+		System.out.println("戦うよ～。");
+	}
 
-    void work() {
-        System.out.println("何かして働くよ～");
-    }
+	void work() {
+		System.out.println("何かして働くよ～");
+	}
 
 }
 
+class Retainer extends Samurai {
+	public Retainer(String name) {
+		super(name);
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
 
+	@Override
+	void work() {
+		System.out.println("年貢を取り立てるよ～。");
+	}
+
+	public String toString() {
+		return "拙者は○△□藩士、" + name + "ともうす。";
+	}
+
+}
 //ここにRetainerクラスを記述
 
+class Ronin extends Samurai {
+	public Ronin(String name) {
+		super(name);
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
 
+	void covered() {
+		System.out.println("傘張りするよ～。");
+	}
+
+	void work() {
+		System.out.println("傘張るよ～。");
+	}
+
+	public String toString() {
+		return "拙者は○△□藩士、" + name + "ともうす。";
+	}
+}
 //ここにRoninクラスを記述
-
 
 public class CastleTown {
 
-    public static void main(String[] args) {
-        System.out.println("藩士クラスのtoString()メソッドを確認します。\n");
+	public static void main(String[] args) {
+		System.out.println("藩士クラスのtoString()メソッドを確認します。\n");
 
+		Retainer retainer = new Retainer("テスト太郎");
+		retainer.toString();
+		//ここに適切な処理を記述
 
-        //ここに適切な処理を記述
+		System.out.println("\n浪人クラスのtoString()メソッドを確認します。\n");
 
+		Ronin ronin = new Ronin("テスト兵衛");
+		ronin.toString();
+		//ここに適切な処理を記述
 
-        System.out.println("\n浪人クラスのtoString()メソッドを確認します。\n");
-
-
-        //ここに適切な処理を記述
-
-
-    }
+	}
 }

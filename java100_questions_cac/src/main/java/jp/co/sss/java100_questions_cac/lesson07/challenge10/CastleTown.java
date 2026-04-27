@@ -24,36 +24,68 @@
 
 package jp.co.sss.java100_questions_cac.lesson07.challenge10;
 
+abstract class Samurai {
 
-//ここにSamuraiクラスを記述
+	protected String name;
 
+	void fight() {
+		System.out.println("戦うよ～。");
+	}
 
-//ここにRetainerクラスを記述
+	public abstract void work();
+}
 
+class Retainer extends Samurai {
 
-//ここにRoninクラスを記述
+	void getPaid() {
+		System.out.println("給料をもらうよ～。");
+	}
 
+	public void work() {
+		System.out.println("年貢を取り立てるよ～。");
+	}
+
+	public String toString() {
+		return "拙者は○△□藩士、" + name + "ともうす。";
+	}
+}
+
+class Ronin extends Samurai {
+
+	void covered() {
+		System.out.println("傘張りするよ～。");
+	}
+
+	public void work() {
+		System.out.println("傘張るよ～。");
+	}
+
+	public String toString() {
+		return "拙者は武州○△□村の浪人、" + name + "ともうす。";
+	}
+}
 
 public class CastleTown {
 
-    public static void main(String[] args) {
-        System.out.println("侍は働きます。");
+	public static void main(String[] args) {
+		System.out.println("侍は働きます。");
 
-        System.out.println("\n具体的に言うと藩士は年貢を取り立てます。\n");
+		System.out.println("\n具体的に言うと藩士は年貢を取り立てます。\n");
 
-        System.out.println("藩士1：");
+		System.out.println("藩士1：");
 
+		Retainer retainer = new Retainer();
+		retainer.work();
 
-        //ここに適切な処理を記述
+		//ここに適切な処理を記述
 
+		System.out.println("\n具体的に言うと浪人は傘張りをします。\n");
 
-        System.out.println("\n具体的に言うと浪人は傘張りをします。\n");
+		System.out.println("浪人1：");
 
-        System.out.println("浪人1：");
+		//ここに適切な処理を記述
+		Ronin ronin = new Ronin();
+		ronin.work();
 
-
-        //ここに適切な処理を記述
-
-
-    }
+	}
 }

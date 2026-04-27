@@ -16,7 +16,10 @@ public class Nurse {
 	}
 
 	public void takeAttendance(NurserySchoolChild[] childs, int num) {
-
+		try {
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("その番号の園児は出席していません。");
+		}
 		//ここに適切な処理を記述
 
 	}
